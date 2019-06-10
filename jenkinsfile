@@ -1,0 +1,11 @@
+node {
+	stage('SCM Checkout'){
+	
+	git 'https://github.com/Talaaaa/test-proj'
+}
+ stage('Compile-Package'){
+	sh 'mvn pavkage'
+}
+	
+
+}
